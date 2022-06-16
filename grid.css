@@ -1,0 +1,58 @@
+body {
+  background-color: navy;
+  position: relative;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  background-color: black;
+  height: 40px;
+  justify-content: space-around;
+  padding: 0 100px;
+
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: rgb(189, 210, 47);
+  margin: 5px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr 2fr;
+  justify-content: center;
+  height: 80vh;
+  width: 50%;
+  margin:2rem auto;
+}
+
+.grid-item-1 {
+  background-color: orangered;
+  grid-column: 1/3;
+}
+
+.grid-item-2 {
+  background-color: yellow;
+
+}
+
+.grid-item-3 {
+  background-color: green;
+  grid-row: 2/4;
+
+}
+
+.grid-item-4 {
+  background-color: aqua;
+  grid-column: 2/4;
+}
+
+.grid-item-5 {
+  background-color: aqua;
+  grid-column: 2/4;
+}

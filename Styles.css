@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* color */
+:root {
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-headings-buttons);
+
+}
+
+/* navigation */
+nav {
+  display: flex;
+  background-color: black;
+  height: 40px;
+  justify-content: space-around;
+  padding: 0 100px;
+
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: rgb(189, 210, 47);
+  margin: 5px auto;
+}
+
+/* card style */
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto 50px auto;
+}
+
+div {
+  max-width: 280px;
+  height: 450px;
+  position: relative;
+}
+
+p {
+  color: var(--paragraphs);
+}
+
+h1 {
+  color: var(--background-headings-buttons);
+  margin: 1.5rem auto;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.SEDANS {
+  background-color: var(--Bright-orange);
+  padding: 2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.SUVS {
+  background-color: var(--Dark-cyan);
+  padding: 2rem;
+}
+
+.LUXURY {
+  background-color: var(--Very-dark-cyan);
+  padding: 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+
+button {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 0.7rem;
+  width: 140px;
+  border-radius: 2.5rem;
+  outline: none;
+  border: 2px solid var(--background-headings-buttons);
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+  margin: 6rem auto 1rem auto;
+  font-size: bold;
+  font-weight: 400;
+}
+
+.SEDANS button {
+  background: var(--background-headings-buttons);
+  color: var(--Bright-orange);
+}
+
+.SUVS button {
+  color: var(--Dark-cyan);
+  background: var(--background-headings-buttons);
+}
+
+.LUXURY button {
+  color: var(--Very-dark-cyan);
+  background: var(--background-headings-buttons);
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--background-headings-buttons);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* style tablet and mobile */
+
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .SEDANS {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .LUXURY {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  .attribution {
+    position: relative;
+    width: auto;
+    padding-bottom: 10px;
+  }
+}
